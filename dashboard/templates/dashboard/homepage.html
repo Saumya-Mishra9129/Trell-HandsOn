@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #000000;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<center>
+
+<div class="topnav">
+    <h1>Welcome to Theatre</h1>
+</div>
+
+<div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button" onclick="openTab('Home')">Home</button>
+    <button class="w3-bar-item w3-button" onclick="openTab('Add')">Add</button>
+    <button class="w3-bar-item w3-button" onclick="openTab('Search')">Search</button>
+    <button class="w3-bar-item w3-button" onclick="openTab('LogOut')">LogOut</button>
+
+</div>
+
+<div id="Home" class="w3-container tabs">
+    <div class="w3-card-4 w3-margin" style="width:100%">
+        <div class="w3-row" >
+                <div class="w3-third w3-center">
+                    <div class="card">
+                        <div class="container">
+                            <h6><b>Avenger's EndGame</b></h6>
+                            <p>Description</p>
+                            <p>Available Tickets - </p>
+                            <p>Price</p>
+
+                            <input type="button" value="Add">
+
+
+                            <input type="button" value="Purchase Tickets">
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third w3-center">
+                    <div class="card">
+                        <div class="container">
+                            <h6><b>Avenger's EndGame</b></h6>
+                            <p>Description</p>
+                            <p>Available Tickets - </p>
+                            <p>Price</p>
+                            <input type="button" value="Add">
+                            <input type="button" value="Purchase Tickets">
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third w3-center">
+                    <div class="card">
+                        <div class="container">
+                            <h6><b>Avenger's EndGame</b></h6>
+                            <p>Description</p>
+                            <p>Available Tickets - </p>
+                            <p>Price</p>
+
+                            <input type="button" value="Add">
+
+                            <input type="button" value="Purchase Tickets">
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="w3-third w3-center">
+                    <div class="card">
+                        <div class="container">
+                            <h6><b>Avenger's EndGame</b></h6>
+                            <p>Description</p>
+                            <p>Available Tickets - </p>
+                            <p>Price</p>
+                            <input type="button" value="Add">
+                            <input type="button" value="Purchase Tickets">
+                        </div>
+                    </div>
+            </div>
+                           <div class="w3-third w3-center">
+                    <div class="card">
+                        <div class="container">
+                            <h6><b>Avenger's EndGame</b></h6>
+                            <p>Description</p>
+                            <p>Available Tickets - </p>
+                            <p>Price</p>
+                            <input type="button" value="Add">
+                            <input type="button" value="Purchase Tickets">
+
+
+
+                        </div>
+                    </div>
+                </div>
+                           <div class="w3-third w3-center">
+                    <div class="card">
+                        <div class="container">
+                            <h6><b>Avenger's EndGame</b></h6>
+                            <p>Description</p>
+                            <p>Available Tickets - </p>
+                            <p>Price</p>
+                            <input type="button" value="Add">
+                            <input type="button" value="Purchase Tickets">
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<div id="Add" class="w3-container tabs" style="display:none">
+
+        <form action="/action_page.php">
+        <div class="row">
+             <div class="col-25">
+                <label for="fname">Movie Name</label>
+            </div>
+            <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="director">Director</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="director" name="director" placeholder="Movie's Directors Name">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+        <label for="director">Duration</label>
+    </div>
+    <div class="col-75">
+        <input type="text" id="duration" name="duration" placeholder="Movie's Duration">
+        </div>
+    </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Description</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Please add brief description" style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Add">
+  </div>
+  </form>
+
+</div>
+
+<div id="Search" class="w3-container tabs" style="display:none">
+    <div class="topnav">
+    <h4>Search Your Favourite Movies Here</h4>
+    <input style="width:75%" type="text" placeholder="Search..">
+    </div>
+</div>
+
+<div id="LogOut" class="w3-container tabs">
+    <div class="topnav">
+    <h4>Log Out</h4>
+    <input type="button" value="Log Out">
+    </div>
+</div>
+
+<script>
+function openTab(tab) {
+  var i;
+  var x = document.getElementsByClassName("tabs");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tab).style.display = "block";
+}
+</script>
+
+
+
+
+</center>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+{% block content %}
+    <div class="container">
+        <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+            <button style="background-color:#F4EB16; color:black" class="btn btn-outline-info" type="submit" onclick="location.href = '/homepage'">Login</button>
+        </form>
+        Don't have an account? <a href="/register" target="blank"><strong>register here</strong></a>!
+    </div>
+{% endblock %}
+
+
+
+
+</body>
+</html>
